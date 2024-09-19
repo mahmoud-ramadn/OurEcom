@@ -1,0 +1,326 @@
+{
+  "users": [
+    {
+      "email": "mahmoudramdn2000135@gmail.com",
+      "password": "$2a$10$DEYSSAxESqGr/.7EuypNl.goq.kkZFNLrT8tW6v.EmUzPS9ckOy8i",
+      "firstName": "mahoud",
+      "lastName": "ramand",
+      "id": 1
+    },
+    {
+      "email": "mahmoudramdn20fasdfasd00135@gmail.com",
+      "password": "$2a$10$tto/XF8FauBOCn1VCFGO0OEJBdZZDKs6bQByQoAxEu2eZUtZVDbEe",
+      "firstName": "mahoud",
+      "lastName": "ramand",
+      "id": 2
+    },
+    {
+      "email": "mr2703360@gmail.com",
+      "password": "$2a$10$mfXT6F4fYlmNkcF/R5EN3euHKl0u0aSljdCon6MoAtch9XAsgoZri",
+      "firstName": "mahoud",
+      "lastName": "ramand",
+      "id": 3
+    },
+    {
+      "email": "mhjkhjkhad@gmail.com",
+      "password": "$2a$10$OUZzLBhR.zIoRbd3wb3KV.Offvn1l7g1CpzxUuw1SX.6UM8I4l6F6",
+      "firstName": "mahoud",
+      "lastName": "ramand",
+      "id": 4
+    },
+    {
+      "email": "mahmoud20005@gmail.com",
+      "password": "$2a$10$xJD27P52KLZ69/X3s14znOcauKHlJMFOkdvD8OO4zqgmm.J08xE72",
+      "firstName": "layal",
+      "lastName": "ramand",
+      "id": 5
+    },
+    {
+      "email": "mr9026573@gmail.com",
+      "password": "$2a$10$qosxzM4gCUuip/h4Y8JYe.X0BLpk2H0aw6/D/UroL45w3ehT.Xzly",
+      "firstName": "re",
+      "lastName": "ramand",
+      "id": 6
+    },
+    {
+      "email": "mr55555@gmail.com",
+      "password": "$2a$10$xzJWdRBEkL6oWpMQItDBWuBGyFTi4dH1h0bZlZ9fvVSvd.U6S.eAm",
+      "firstName": "mahmoud",
+      "lastName": "Ramadn",
+      "id": 7
+    },
+    {
+      "email": "mahmoudramdn20001352000@gmail.com",
+      "password": "$2a$10$p60K4s/Gw9wgNmViwghHh.lMR.AWOJ3NMTL9EZhUPd5nR/9JI1ln2",
+      "firstName": "re",
+      "lastName": "ramand",
+      "id": 8
+    },
+    {
+      "email": "gereenmail@gmailc.com",
+      "password": "$2a$10$b6QWlBeW7dUc9Kl6D.3xC.jmTTe3lob9bJuaXnU/gYzypzA05jn3W",
+      "firstName": "neww",
+      "lastName": "nwadjfalkds",
+      "id": 9
+    },
+    {
+      "email": "mahmoud123@gmail.com",
+      "password": "$2a$10$MqC40qHdToOr5YfgNnZEP.gnL9zhi1B/h7Roex4dLjNDMbffIyR2S",
+      "firstName": "mahmoud AbouElEz",
+      "lastName": "AbouElEz",
+      "id": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "men",
+      "prefix": "men",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/cfb357649428__hp-w12-22032022-h_m-men.jpg"
+    },
+    {
+      "id": "2",
+      "title": "women",
+      "prefix": "women",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/30d354267a09b__hp-w12-22032022-h_m-women_dresses.jpg"
+    },
+    {
+      "id": "3",
+      "title": "kids",
+      "prefix": "kids",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/37d243d334c63__hp-w12-22032022-h_m-kids1.jpg"
+    },
+    {
+      "id": "4",
+      "title": "baby",
+      "prefix": "baby",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/28948d47ae6e8__h_m-w39-28092022-4066c-1x1.jpg"
+    },
+    {
+      "id": "5",
+      "title": "sport",
+      "prefix": "sport",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/1dda9ae79a671__h_m-w40-06102022-7416b-1x1.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Regular Fit Jersey top",
+      "price": "249.00",
+      "cat_prefix": "men",
+      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "2",
+      "title": "Regular Fit Jersey top",
+      "price": "229.00",
+      "cat_prefix": "men",
+      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "3",
+      "title": "Cotton polo shirt",
+      "price": "200.00",
+      "cat_prefix": "men",
+      "img": "https://eg.hm.com/assets/styles/HNM/13994073/eeb1d90c4764366000eb8b8571396e81f0de5c44/2/image-thumb__3142108__product_listing/4d6db9e8f936d3d82b13bc5861b0310fa214c74d.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "4",
+      "title": "Cotton t-shirt",
+      "price": "100.00",
+      "cat_prefix": "women",
+      "img": "https://eg.hm.com/assets/styles/HNM/13650519/6cc34f51caee1d6cfe776b933d667075fa30d90d/2/image-thumb__2888777__product_listing/16c27492b022ac2eef03853f85d5b279a29ebeed.jpg",
+      "quantity": 3,
+      "max": 3
+    },
+    {
+      "id": "5",
+      "title": "Sweatshirt shorts",
+      "price": "300.00",
+      "cat_prefix": "women",
+      "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "6",
+      "title": "Velour top",
+      "price": "300.00",
+      "cat_prefix": "kids",
+      "img": "https://eg.hm.com/assets/styles/HNM/14478215/543d925539f4a3b92a79df2dfe46d5d481e1c7ae/2/image-thumb__3463278__product_listing/c1417d02c7a93e6d2aca7965003b4f7d490f0ae8.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "9",
+      "title": "Pile all-in-one suit with ears",
+      "price": "500.00",
+      "cat_prefix": "baby",
+      "img": "https://eg.hm.com/assets/styles/HNM/10803913/c334b471ad8f564ed1b5dd410c95d94544ee0904/2/image-thumb__1594613__product_listing/5941e37dccc9b0172ac2ab7c266c1cd794cb547f.jpg",
+      "quantity": 4,
+      "max": 3
+    },
+    {
+      "id": "17",
+      "title": "Regular Fit football shirt",
+      "price": "449.00",
+      "cat_prefix": "sport",
+      "img": "https://eg.hm.com/assets/styles/HNM/14472541/cb9d35f1480ce5c8b0be39ad7fd35ab9f8004ce0/2/image-thumb__3453052__product_listing/70408034bd9792a93abbc8ad322565337f535e24.jpg",
+      "quantity": 4,
+      "max": 3
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 1,
+      "productId": "6",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "productId": "5",
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "productId": "4",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "productId": "2",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "productId": "3",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "productId": "1",
+      "id": 29
+    }
+  ],
+  "orders": [
+    {
+      "userId": 6,
+      "items": [
+        {
+          "id": "6",
+          "title": "Velour top",
+          "price": "300.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/14478215/543d925539f4a3b92a79df2dfe46d5d481e1c7ae/2/image-thumb__3463278__product_listing/c1417d02c7a93e6d2aca7965003b4f7d490f0ae8.jpg",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 300,
+      "id": 1
+    },
+    {
+      "userId": 8,
+      "items": [
+        {
+          "id": "1",
+          "title": "Regular Fit Jersey top",
+          "price": "249.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "title": "Regular Fit Jersey top",
+          "price": "229.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "title": "Cotton polo shirt",
+          "price": "200.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/13994073/eeb1d90c4764366000eb8b8571396e81f0de5c44/2/image-thumb__3142108__product_listing/4d6db9e8f936d3d82b13bc5861b0310fa214c74d.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "title": "Pile all-in-one suit with ears",
+          "price": "500.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/10803913/c334b471ad8f564ed1b5dd410c95d94544ee0904/2/image-thumb__1594613__product_listing/5941e37dccc9b0172ac2ab7c266c1cd794cb547f.jpg",
+          "quantity": 3
+        },
+        {
+          "id": "17",
+          "title": "Regular Fit football shirt",
+          "price": "449.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/14472541/cb9d35f1480ce5c8b0be39ad7fd35ab9f8004ce0/2/image-thumb__3453052__product_listing/70408034bd9792a93abbc8ad322565337f535e24.jpg",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 2627,
+      "id": 2
+    },
+    {
+      "userId": 6,
+      "items": [
+        {
+          "id": "4",
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/13650519/6cc34f51caee1d6cfe776b933d667075fa30d90d/2/image-thumb__2888777__product_listing/16c27492b022ac2eef03853f85d5b279a29ebeed.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 400,
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "items": [
+        {
+          "id": "4",
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/13650519/6cc34f51caee1d6cfe776b933d667075fa30d90d/2/image-thumb__2888777__product_listing/16c27492b022ac2eef03853f85d5b279a29ebeed.jpg",
+          "quantity": 2
+        },
+        {
+          "id": "5",
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+          "quantity": 3
+        }
+      ],
+      "subtotal": 1100,
+      "id": 4
+    },
+    {
+      "userId": 9,
+      "items": [
+        {
+          "id": "5",
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 300,
+      "id": 5
+    }
+  ]
+}
