@@ -9,7 +9,7 @@ import { Button, Spinner, Modal } from "react-bootstrap";
 import { TProducts } from "src/types/product";
 import FullDAta from "../FullData/FullDAta";
 import styles from "./styles.module.css";
-const { productImg, maximumNotice, wishlistBtn } = styles;
+const { maximumNotice, wishlistBtn } = styles;
 
 const Product = memo(
   ({

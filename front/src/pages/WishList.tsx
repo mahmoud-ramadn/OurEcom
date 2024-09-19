@@ -1,7 +1,7 @@
 import Heading from "@components/common/Heading/Heading";
 import useWishlist from "@hooks/useWishlist";
-import { Product } from "@components/eCommerce";
 import { TProducts } from "src/types/product";
+import Product from "@components/ecommerce/Prod/Product";
 import { Lodaing } from "@components/feedback/Loading";
 import GridList from "@components/common/GridList/GridList";
 const Wishlist = () => {
