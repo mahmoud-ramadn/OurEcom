@@ -104,8 +104,8 @@ console.log(accessToken);
               variant="info"
               type="submit"
               style={{ color: "white" }}
-              disabled={emailAvailabilityStatus === "checking" ? true :
-                false || loading === "pending"}
+              // eslint-disable-next-line no-constant-binary-expression
+              disabled={emailAvailabilityStatus === "checking" ? true : false || loading === "pending"}
             >
               {loading === 'pending' ? (
                 <>
