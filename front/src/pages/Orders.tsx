@@ -5,7 +5,6 @@ import Heading from "@components/common/Heading/Heading";
 
 import FullDAta from "../components/ecommerce/FullData/FullDAta";
 import { Table, Modal } from "react-bootstrap";
-// khfjkhdskafasdhfkjas
 
 const Orders = () => {
   const {
