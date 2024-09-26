@@ -1,41 +1,36 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axiosErrorHandler from "@utils/axiosErrorHandler";
 import axios from "axios";
+import axiosErrorHandler from "@utils/axiosErrorHandler";
 
-
-type formData = {
-    email: string;
-    password:string
-}
+type TFormData = {
+  email: string;
+  password: string;
+};
 
 type TResponse = {
-    
-        user: {
-            id: number;
-            email: string;
-            firstName: string;
-            lastName: string;
+  user: {
+    id: number;
+    email: string;
+    firstName: string;
+    lastName: string;
+  };
+  accessToken: string;
+};
+
+const actAuthLogin = createAsyncThunk(
+  "auth/actAuthLogin",
+  async (formData: TFormData, thunk) => {
+    const { rejectWithValue } = thunk;
+
+    try {
+      const res = await axios.post<TResponse>("/login", formData);
+      console.log(res.data);
+      
+      return res.data;
+    } catch (error) {
+      return rejectWithValue(axiosErrorHandler(error));
     }
-accessToken: string
+  }
+);
 
-}
-
-const actAuthLogin = createAsyncThunk("auth/actAuthLogin",
-    async (formData: formData, thunk) => {
-        const {rejectWithValue } = thunk;
-try {
-    const res = await axios.post<TResponse>("/login", formData);
-    
-    return res.data
-
-
-
-
-
-} catch (error) {
-    return rejectWithValue(axiosErrorHandler(error))
-}
-     }
-)
-
-export default actAuthLogin
+export default actAuthLogin;

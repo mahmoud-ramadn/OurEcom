@@ -1,53 +1,57 @@
-
-import { zodResolver } from "@hookform/resolvers/zod"
-import { actAuthLogin, restUI } from "@store/auth/authSlice"
-import { useAppDispatch, useAppSelector } from "@store/hook"
-import { signInSchema, signInType } from "@validations/signInSchema"
-import { useEffect } from "react"
-import {useForm ,SubmitHandler } from "react-hook-form"
-import { useNavigate, useSearchParams } from "react-router-dom"
-
+import { useEffect } from "react";
+import { useAppSelector,useAppDispatch } from "@store/hook";
+// import { actAuthLogin, resetUI } from "@store/auth/authSlice";
+import { actAuthLogin,restUI } from "@store/auth/authSlice";
+import { useSearchParams, useNavigate } from "react-router-dom";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { signInSchema, signInType } from "@validations/signInSchema";
 
 const useLogin = () => {
-      const navigate=useNavigate()
-    const dispatch = useAppDispatch();
-    const {error,loading,accessToken } = useAppSelector(state => state.auth);
+  const dispatch = useAppDispatch();
 
+  const navigate = useNavigate();
 
+  const [searchParams, setSearchParams] = useSearchParams();
 
+  const { error, loading, accessToken } = useAppSelector((state) => state.auth);
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors: formErrors },
+  } = useForm<signInType>({
+    mode: "onBlur",
+    resolver: zodResolver(signInSchema),
+  });
 
-    const [SearchParams,setSearchParams] = useSearchParams();
+  const submitForm: SubmitHandler<signInType> = async (data) => {
+    if (searchParams.get("message")) {
+      setSearchParams("");
+    }
+    dispatch(actAuthLogin(data))
+      .unwrap()
+      .then(() => {
+        navigate("/");
+      });
+  };
 
+  useEffect(() => {
+    return () => {
+      dispatch(restUI());
+    };
+  }, [dispatch]);
 
+  return {
+    error,
+    loading,
+    accessToken,
+    formErrors,
+    searchParams,
+    register,
+    handleSubmit,
+    submitForm,
+  };
+};
 
-    const { register, handleSubmit, formState: { errors:formErros} } = useForm<signInType>({
-        mode: 'onBlur',
-        resolver:zodResolver(signInSchema)
-      })
-    
-    
-      const submitForm:SubmitHandler<signInType>=async (data) => {
-          if (SearchParams.get('message')) {
-              setSearchParams("")
-          }
-          dispatch(actAuthLogin(data)).unwrap().then(()=>navigate('/'))
-        
-      }
-    
-    useEffect(() => {
-         dispatch(restUI())
-     },[dispatch])
-    
-
-
-    return {
-        error, loading,
-        accessToken,
-        register, handleSubmit, formErros,
-        submitForm,
-        SearchParams
-  }
-}
-
-export default useLogin
+export default useLogin;

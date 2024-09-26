@@ -1,2 +1,2 @@
 import axios from "axios";
-axios.defaults.baseURL="https://ou-server.vercel.app"
+axios.defaults.baseURL="http://localhost:5005"

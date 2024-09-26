@@ -1,4 +1,3 @@
-import '../components/common/EmblaCarousel/embla.css'
 
 const Home = () => {
   

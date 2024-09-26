@@ -21,6 +21,8 @@ const Header = ({ handl }: HeaderProps) => {
   const dispatch = useAppDispatch();
 
 
+  
+
 useEffect(() => {
     if (accessToken) {
       dispatch(actGetWishlist("ProductIds"));

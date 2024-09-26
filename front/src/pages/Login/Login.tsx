@@ -1,78 +1,57 @@
-
-import Heading from "@components/common/Heading/Heading"
-import { Input } from "@components/Form"
-import useLogin from "@hooks/useLogin"
-
-import { Col, Form, Row ,Button,Spinner, Alert} from "react-bootstrap"
-import { Navigate } from "react-router-dom"
-
+import { Navigate } from "react-router-dom";
+import useLogin from "@hooks/useLogin";
+import  Heading  from "@components/common/Heading/Heading";
+import { Input } from "@components/Form";
+import { Form, Button, Row, Col, Alert, Spinner } from "react-bootstrap";
 
 const Login = () => {
-
-  const { handleSubmit, submitForm, register,
-    formErros,
-    SearchParams, error, accessToken, loading
-    
+  const {
+    error,
+    loading,
+    accessToken,
+    formErrors,
+    searchParams,
+    register,
+    handleSubmit,
+    submitForm,
   } = useLogin();
- 
-  
 
   if (accessToken) {
-    return <Navigate to="/"/>
+    return <Navigate to="/" />;
   }
 
   return (
-    
     <>
-      <Heading title="User Login"/>
+      <Heading title="User Login" />
       <Row>
-        <Col md={{ span: 6, offset: 3 }} >
-          {
-            SearchParams.get('message') === "login_required" && <Alert variant="success" >
-
-              you neeed to login to view this content
-
+        <Col md={{ span: 6, offset: 3 }}>
+          {searchParams.get("message") === "login_required" && (
+            <Alert variant="success">
+              You need to login to view this content
             </Alert>
-          
-          
-          }
-          {
-            SearchParams.get('message') === "account_created" &&
-            <Alert variant="success" >
+          )}
 
-              your account successfully created ,please Login
+          {searchParams.get("message") === "account_created" && (
+            <Alert variant="success">
+              Your account successfully created, please login
             </Alert>
-          
-          
-          }
-
-
-
-
-
-
-
+          )}
           <Form onSubmit={handleSubmit(submitForm)}>
             <Input
-              type="email"
-              label="Email  Address"
               name="email"
+              label="Email Address"
               register={register}
-              error={formErros.email?.message}
+              error={formErrors.email?.message}
             />
             <Input
               type="password"
-              label="password"
               name="password"
+              label="Password"
               register={register}
-              error={formErros.password?.message}
+              error={formErrors.password?.message}
             />
-     
-
-            
-
-     <Button variant="info" type="submit" style={{ color: "white" }}>
-     {loading === "pending" ? (
+            <Button variant="info" type="submit" style={{ color: "white" }}>
+              {loading === "pending" ? (
                 <>
                   <Spinner animation="border" size="sm"></Spinner> Loading...
                 </>
@@ -81,19 +60,14 @@ const Login = () => {
               )}
             </Button>
 
-
-   {error && (
+            {error && (
               <p style={{ color: "#DC3545", marginTop: "10px" }}>{error}</p>
             )}
-
-
           </Form>
-        </Col> 
-
- </Row>
+        </Col>
+      </Row>
     </>
-    
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

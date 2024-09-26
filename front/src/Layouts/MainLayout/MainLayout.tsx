@@ -15,9 +15,6 @@ const MainLayout = () => {
       color:dark? "white":''
       
 
-
-
-
     }}  >
 <div className={`${container} `}   >
       <Header handl={()=>setDark(!dark)} />
