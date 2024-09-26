@@ -3,7 +3,7 @@ import { Lodaing } from "@components/feedback/Loading";
 
 import Heading from "@components/common/Heading/Heading";
 
-import FullDAta from "@components/eCommerce/FullData/FullDAta";
+import FullDAta from "../components/ecommerce/FullData/FullDAta";
 import { Table, Modal } from "react-bootstrap";
 // khfjkhdskafasdhfkjas
 
